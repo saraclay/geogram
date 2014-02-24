@@ -1,0 +1,43 @@
+body {
+	width: 80%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border-style:solid;
+	border-color:black;
+	font-family: 'Roboto Slab', serif; font-size:20px; 
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif; font-size:50px; line-height:5px;
+}
+
+#loading { 
+	display:none; 
+  
+}
+
+input#insta-user {
+	width: 300px;
+	height: 35px;
+	font-family: 'Roboto Slab', serif; font-size:20px;
+}
+
+#ajaxed-content{
+	width:85%;
+}
+
+#ajaxed-userinfo{
+	width:85%;
+}
+
+#instagram-template {
+	padding-bottom:15px;
+}
+
+#map { 
+
+	height: 225px;
+	width: 80%;
+	margin: 0 auto;
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<html>
+<head>
+<meta charset="utf-8" />
+	<title>Geogram</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+</head>
+<center>
+<body>
+	<br>
+<h1>Geogram</h1>
+<a href="http://jelled.com/instagram/lookup-user-id" onclick="return popitup('http://jelled.com/instagram/lookup-user-id')">Find user ID</a>.
+Then input # below.
+<br><br>
+ <form id="user-search" method="GET">
+ <input type="text" class="instagram-search" name="user" id="insta-user" placeholder="e.g. 2630"  />
+ <br>
+</form>
+<br>
+<div id="ajaxed-userinfo">
+<script type="template" id="user-template">
+<br>
+<img src="{{profile_picture}}" width="125" height="125" title="{{username}}" />
+<br>
+<p>{{full_name}}</p>
+<p>{{username}}</p>
+<p><a href="{{website}}" target="_blank">{{website}}</a></p>
+</script>
+</div>
+<div id="map"></div>
+ <br>
+<div id="ajaxed-content">
+	<div id="loading">
+    <p><img src="ajax_loader.gif" /></p>
+</div>
+<script type="template" id="instagram-template">
+<img src="{{images.standard_resolution.url}}" width="210" height="210" title="{{caption.text}}" />
+</script>
+<br><br>
+</div>
+<script language="javascript">
+	<!--
+	/*
+	<body>
+	<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
+The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
+</div>
+<div style="display: block; font-family: Verdana, Geneva, Arial; font-size: 10px">
+The University of Southern California does not screen or control the content on this website and thus does not guarantee the accuracy, integrity, or quality of such content.  All content on this website is provided by and is the sole responsibility of the person from which such content originated, and such content does not necessarily reflect the opinions of the University administration or the Board of Trustees
+</div>
+</body>
+	</html>
+	*/
+	-->
+	</script>
+
+<script language="javascript" type="text/javascript">
+function popitup(url) {
+	newwindow=window.open(url,'http://jelled.com/instagram/lookup-user-id','height=550,width=700');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="handlebars.js"></script>
+<link rel="stylesheet" href="style.css" />
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="info.js"></script>
+<script src="maps.js"></script>
+<script src="main.js"></script>
+
+<script>
+//lookup user id: 
+//https://api.instagram.com/v1/users/14265757/?access_token=17177217.f59def8.d29629c1eb264661958417cfde80b3bf
+//lookup user photos
+//https://api.instagram.com/v1/users/14265757/media/recent/?access_token=17177217.f59def8.d29629c1eb264661958417cfde80b3bf
+
+
+//link: http://localhost:8080/itp404/final_project/index.html
+
+</script>
+</center>
+</body>
+</html>
