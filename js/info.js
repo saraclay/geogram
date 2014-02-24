@@ -8,7 +8,7 @@ var templateFunction = Handlebars.compile(templateString);
 
 //pulls user data information
 	 var promise = $.ajax({
-		url: 'fetch-info.php',
+		url: 'php/fetch-info.php',
 		type: 'get',
 		dataType: 'json',
 		data: {

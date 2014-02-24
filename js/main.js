@@ -8,7 +8,7 @@ var templateFunction = Handlebars.compile(templateString);
 
 //pulls information about photos
 	 var promise = $.ajax({
-		url: 'fetch.php',
+		url: 'php/fetch.php',
 		type: 'get',
 		dataType: 'json',
 		data: {
