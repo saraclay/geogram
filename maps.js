@@ -27,7 +27,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
       title: 'You are here', 
       position: currentLatLng,
       map: map,
-      icon: 'cam_icon3.png',
+      icon: 'images/cam_icon.png',
       draggable: true
     });
 
@@ -75,7 +75,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
           title: name, 
           position: new google.maps.LatLng(lat, lng),
           map: map,
-          icon: "cam_icon3.png"
+          icon: "images/cam_icon.png"
         });  
 
         marker.setMap(map);
@@ -92,7 +92,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
       //contains content of infowindow
         var contentString ='<div id="bodyContent">'+
       '<p>This is <b>' + name + '</b>.</p>'  +
-      '<p><img src="heart_icon4.png">' + likeCount + '   people like this.'
+      '<p><img src="images/heart_icon.png">' + likeCount + '   people like this.'
       '</div>';
 
       //this sets up the infowindow. hurrah!
